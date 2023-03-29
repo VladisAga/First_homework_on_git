@@ -1,0 +1,190 @@
+.content_block {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+%box_styles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+%topic_styles {
+    margin: 0;
+    color: red;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+%sans_style {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin extra_style ($fontSizeValue) {
+    font-size: $fontSizeValue;
+    font-weight: 400;
+}
+
+@mixin ellipse_style ($backColorValue) {
+    background-color: $backColorValue;
+}
+
+%static_ellipse {
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+}
+
+$backColor: #333333;
+
+%backValue {
+    max-width: 100%;
+    background-color: $backColor;
+    height: 120px;
+}
+
+.first_box {
+    @extend %box_styles;
+}
+
+.topic {
+    @extend %topic_styles;
+}
+
+.next {
+    margin-top: 50px;
+}
+
+.first_div {
+    @extend %box_styles;
+    row-gap: 20px;
+
+    p {
+        @extend %sans_style;
+    }
+
+    .sec {
+        @include extra_style(15px);
+    }
+
+    .thi {
+        @include extra_style(14px);
+    }
+
+    .fou {
+        @include extra_style(12px);
+    }
+}
+
+.second_div {
+    @extend %box_styles;
+    row-gap: 20px;
+
+    p {
+        @extend %sans_style;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .seco {
+        @include extra_style(36px);
+    }
+
+    .thir {
+        @include extra_style(30px);
+    }
+
+    .four {
+        @include extra_style(15px);
+    }
+}
+
+.second_box {
+    @extend %box_styles;
+
+    div {
+        display: flex;
+        column-gap: 20px;
+        margin-left: 10px;
+
+        div {
+            @include ellipse_style(#212121);
+            @extend %static_ellipse;
+        }
+
+        .sec_el {
+            @include ellipse_style(#E72424);
+        }
+
+        .th_el {
+            @include ellipse_style(#86878B);
+        }
+
+        .for_el {
+            @include ellipse_style(#333333);
+        }
+
+        .fif_el {
+            @include ellipse_style(#000000);
+        }
+    }
+}
+
+.third_box {
+    @extend %box_styles;
+
+    div {
+        display: flex;
+        column-gap: 20px;
+
+        div {
+            img {
+                height: 80px;
+            }
+        }
+
+        .icons {
+            height: 40px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.fourth_box {
+    @extend %box_styles;
+
+    .back_block {
+        @extend %backValue;
+    }
+
+    button {
+        background-color: transparent;
+        border: 3px solid white;
+        padding: 10px 30px;
+        font-size: 15px;
+        color: white;
+        margin: 37px 0 0 24px;
+    }
+}
+
+.fifth_box {
+    @extend %box_styles;
+
+    .back_block {
+        @extend %backValue;
+    }
+
+    .divider {
+        border-top: 2px solid white;
+        width: 64px;
+        margin: 41.5px 0 0 32px;
+    }
+
+    .qw2 {
+        border-top: 2px solid red;
+    }
+}

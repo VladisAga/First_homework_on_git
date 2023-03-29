@@ -1,0 +1,130 @@
+.content_block {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fifth_box, .fourth_box, .third_box, .second_box, .second_div, .first_div, .first_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.topic {
+  margin: 0;
+  color: red;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+.second_div p, .first_div p {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.second_box div div {
+  width: 50px;
+  height: 50px;
+  border-radius: 90px;
+}
+
+.fifth_box .back_block, .fourth_box .back_block {
+  max-width: 100%;
+  background-color: #333333;
+  height: 120px;
+}
+
+.next {
+  margin-top: 50px;
+}
+
+.first_div {
+  row-gap: 20px;
+}
+.first_div .sec {
+  font-size: 15px;
+  font-weight: 400;
+}
+.first_div .thi {
+  font-size: 14px;
+  font-weight: 400;
+}
+.first_div .fou {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.second_div {
+  row-gap: 20px;
+}
+.second_div p {
+  font-family: "Raleway", sans-serif;
+}
+.second_div .seco {
+  font-size: 36px;
+  font-weight: 400;
+}
+.second_div .thir {
+  font-size: 30px;
+  font-weight: 400;
+}
+.second_div .four {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.second_box div {
+  display: flex;
+  column-gap: 20px;
+  margin-left: 10px;
+}
+.second_box div div {
+  background-color: #212121;
+}
+.second_box div .sec_el {
+  background-color: #E72424;
+}
+.second_box div .th_el {
+  background-color: #86878B;
+}
+.second_box div .for_el {
+  background-color: #333333;
+}
+.second_box div .fif_el {
+  background-color: #000000;
+}
+
+.third_box div {
+  display: flex;
+  column-gap: 20px;
+}
+.third_box div div img {
+  height: 80px;
+}
+.third_box div .icons {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.fourth_box button {
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: white;
+  margin: 37px 0 0 24px;
+}
+
+.fifth_box .divider {
+  border-top: 2px solid white;
+  width: 64px;
+  margin: 41.5px 0 0 32px;
+}
+.fifth_box .qw2 {
+  border-top: 2px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */
